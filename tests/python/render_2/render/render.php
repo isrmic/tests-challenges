@@ -23,7 +23,7 @@
       <div> #{ thisnumber if len(thisnumber) > len(thistext) else thistext} </div>
       <!-- <div> #{ str(input("insira o conteúdo desta div : "))  </div> -->
 
-      #{ GenerateHtmlElement("div", "este é o conteúdo que vai ser colocado dentro da geração de elemento") }
+      #{ GenerateHtmlElement("div", "este é o conteúdo que vai ser colocado dentro da geração de elemento", "class = 'class_render' ") }
 
       {{ $data->cep }}
       {{ $data->logradouro }}

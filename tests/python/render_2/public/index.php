@@ -23,7 +23,7 @@
       <div> variável declarada : thisnumber </div>
       <!-- <div> #{ str(input("insira o conteÃºdo desta div : "))  </div> -->
 
-      <div> este Ã© o conteÃºdo que vai ser colocado dentro da geraÃ§Ã£o de elemento </div>
+      <div class = 'class_render' > este Ã© o conteÃºdo que vai ser colocado dentro da geraÃ§Ã£o de elemento </div>
 
       30230-300
       Rua da Liberdade

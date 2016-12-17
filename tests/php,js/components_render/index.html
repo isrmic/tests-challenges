@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="estudos html">
+
+    <title> estudos </title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src = "js/handle.min.js"></script>
+    <script src = "js/creation.min.js"></script>
+    <script src = "js/axios.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+      <div class="container">
+
+          <div class="capsule-title"> <h2 class = "title"> WellCome to my homepage </h2>   </div>
+
+
+
+          <div class="menu-left">
+            <!-- <div if = "checkIsLoged" render = "true" class="user"> <i class="fa fa-user-circle" aria-hidden="true"> </i> Seja Bem Vindo <b> #{UserName} </b> </div> -->
+            <wellcome-user></wellcome-user>
+              <ul>
+
+                <li if ="!checkIsLoged"> <change-view elm = "#allView" new-view = "login"><a href="#"> Login </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "index"> <a href="#home"> Home </a> </change-view> </li>
+                <li> <change-view><a href="#"> Description </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "ssl" ><a href="#"> SSL </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "components" ><a href="#"> Componentes </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "elements" ><a href="#"> Elementos </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "form" ><a href="#"> Formulário </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "textrender" ><a href="#"> Texto Renderizado </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "CepInfo" ><a href="#"> Cep Info </a></change-view> </li>
+                <li> <change-view elm = "#allView" new-view = "pageanywhere" ><a href="#"> Option 9 </a></change-view> </li>
+                <li if = "checkIsLoged"> <change-view call = "logout" elm = "#allView" new-view = "index" ><a href="#"> Logout </a></change-view> </li>
+
+              </ul>
+          </div>
+
+          <div class="index">
+
+                <view-app id  ="allView" base = "main" view = "index"></view-app>
+                <!-- <button class = "typebtn purple" method="click:increment"> increment </button> -->
+      </div>
+
+  </body>
+</html>

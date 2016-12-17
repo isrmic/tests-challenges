@@ -28,6 +28,7 @@
       {{ $data->cep }}
       {{ $data->logradouro }}
       {{ $data->bairro }}
+      {{ $hello_world }}
 
 
   </body>
